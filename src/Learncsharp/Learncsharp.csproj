@@ -13,7 +13,6 @@
 
 
   <ItemGroup>
-    <Folder Include="wwwroot\assets\css\" />
     <Folder Include="wwwroot\assets\js\" />
     <Folder Include="wwwroot\assets\images\" />
     <Folder Include="wwwroot\lib\" />
