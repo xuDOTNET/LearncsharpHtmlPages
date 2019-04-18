@@ -1,16 +1,19 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    @* meta *@
-    <meta charset="utf-8" />
+    @* meta *@  
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="keywords" content="Bootstrap Theme, Freebies, Dashboard, MIT license">
+    <meta name="description" content="Stream - Dashboard UI Kit">
+    <meta name="author" content="梁桐铭(Tongming Liang)">
 
     @* Favicon *@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     @* Web Fonts -国内镜像 替换google*@
-    <link href="//fonts.proxy.ustclug.org/css?family=Playfair+Display:400,700%7COpen+Sans:300,400,600,700" rel="stylesheet">
-   
+    <link href="//fonts.proxy.ustclug.org/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
     @*<link href="//fonts.googleapis.com/css?family=Playfair+Display:400,700%7COpen+Sans:300,400,600,700" rel="stylesheet">*@
 
 
@@ -20,26 +23,24 @@
         <link href="~/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true" />
         <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" asp-append-version="true" />
     </environment>
-     
+
     <link rel="stylesheet" href="~/assets/css/styles.css" asp-append-version="true" />
 
 </head>
 <body>
 
-    @await Html.PartialAsync("~/Pages/Shared/_Header.cshtml")
+  
 
 
-    
 
 
-    <div class="container">
-        <partial name="_CookieConsentPartial" />
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    @await Html.PartialAsync("~/Pages/Shared/_Footer.cshtml")
+
+    <main class="container-fluid w-100" role="main">
+        @RenderBody()
+    </main>
+
+
 
     <environment include="Development">
         <script src="~/lib/jquery/jquery.js"></script>
