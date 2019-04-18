@@ -20,9 +20,19 @@
 
 
   <ItemGroup>
-    <Folder Include="wwwroot\assets\images\" />
     <Folder Include="wwwroot\assets\include\" />
     <Folder Include="wwwroot\lib\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\img\.DS_Store" />
+    <None Include="wwwroot\assets\img-temp\.DS_Store" />
+    <None Include="wwwroot\assets\img-temp\200x200\.DS_Store" />
+    <None Include="wwwroot\assets\img-temp\ava\.DS_Store" />
+    <None Include="wwwroot\assets\img-temp\demo\.DS_Store" />
+    <None Include="wwwroot\assets\img-temp\portfolio\.DS_Store" />
+    <None Include="wwwroot\assets\img-temp\promo\.DS_Store" />
   </ItemGroup>
 
 </Project>
