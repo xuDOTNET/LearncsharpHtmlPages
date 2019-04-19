@@ -10,18 +10,22 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     @* Web Fonts -国内镜像 替换google*@
     <link href="//fonts.proxy.ustclug.org/css?family=Playfair+Display:400,700%7COpen+Sans:300,400,600,700" rel="stylesheet">
-   
+
     @*<link href="//fonts.googleapis.com/css?family=Playfair+Display:400,700%7COpen+Sans:300,400,600,700" rel="stylesheet">*@
 
 
-    <title>@ViewData["Title"] - Learncsharp</title>
+    <title>
+        @ViewData["Title"] - Learncsharp - Powered By YoYoSoft
+    </title>
 
     <environment include="Development">
-        <link href="~/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/assets/Vender/bootstrap/css/bootstrap.css" rel="stylesheet" asp-append-version="true" />
+
         <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" asp-append-version="true" />
     </environment>
-     
+
     <link rel="stylesheet" href="~/assets/css/styles.css" asp-append-version="true" />
+
 
 </head>
 <body>
@@ -41,13 +45,14 @@
 
     @await Html.PartialAsync("~/Pages/Shared/_Footer.cshtml")
 
-    <environment include="Development">
-        <script src="~/lib/jquery/jquery.js"></script>
-        <script src="~/lib/jquery-migrate/jquery-migrate.min.js"></script>
-        <script src="~/lib/popper.js/popper.min.js"></script>
-        <script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
+<environment include="Development">
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="~/lib/popper.js/popper.min.js"></script>
 
-    </environment>
+    <script src="~/assets/Vender/bootstrap/js/bootstrap.min.js"></script>
+
+</environment>
 
     <script src="~/assets/js/global.js" asp-append-version="true"></script>
 
